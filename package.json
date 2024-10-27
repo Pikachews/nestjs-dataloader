@@ -1,5 +1,5 @@
 {
-  "name": "@strv/nestjs-dataloader",
+  "name": "@pikachews/nestjs-dataloader",
   "description": "Nest.js decorator for injecting GraphQL Dataloader instances into your resolvers",
   "author": {
     "name": "Robert Rossmann",
@@ -7,9 +7,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/strvcom/nestjs-dataloader.git"
+    "url": "git+https://github.com/Pikachews/nestjs-dataloader.git"
   },
-  "homepage": "https://github.com/strvcom/nestjs-dataloader",
+  "homepage": "https://github.com/Pikachews/nestjs-dataloader",
   "version": "0.2.0",
   "license": "BSD-3-Clause",
   "type": "module",
