@@ -1,7 +1,7 @@
 import { describe } from 'vitest'
 import { type ExecutionContext } from '@nestjs/common'
 import DataLoader from 'dataloader'
-import { DataloaderFactory, type Aggregated } from '@strv/nestjs-dataloader'
+import { DataloaderFactory, type Aggregated } from '../src'
 
 class TestFactory extends DataloaderFactory<unknown, unknown> {
   load = async () => await Promise.resolve([])

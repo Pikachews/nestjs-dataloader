@@ -4,7 +4,7 @@ import { describe } from 'vitest'
 import { Controller, Get, Injectable } from '@nestjs/common'
 import { NestExpressApplication } from '@nestjs/platform-express'
 import { Test } from '@nestjs/testing'
-import { DataloaderModule, DataloaderFactory, type LoaderFrom, Loader } from '@strv/nestjs-dataloader'
+import { DataloaderModule, DataloaderFactory, type LoaderFrom, Loader } from '../src'
 
 describe('@Loader()', it => {
   it('injects the dataloader instance into the request handler', async t => {

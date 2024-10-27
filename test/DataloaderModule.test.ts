@@ -1,7 +1,7 @@
 import { describe } from 'vitest'
 import { Test, TestingModule } from '@nestjs/testing'
 import { Injectable } from '@nestjs/common'
-import { DataloaderFactory, DataloaderModule } from '@strv/nestjs-dataloader'
+import { DataloaderFactory, DataloaderModule } from '../src'
 
 describe('DataloaderModule', it => {
   it('exists', t => {
@@ -36,10 +36,12 @@ describe('DataloaderModule', it => {
     }
 
     const provider = DataloaderModule.forFeature([SampleLoaderFactory])
-    const module = Test.createTestingModule({ imports: [
-      DataloaderModule.forRoot(),
-      provider,
-    ] })
+    const module = Test.createTestingModule({
+      imports: [
+        DataloaderModule.forRoot(),
+        provider,
+      ]
+    })
     const app = await module.compile()
     t.onTestFinished(async () => await app.close())
 
