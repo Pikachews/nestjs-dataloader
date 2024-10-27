@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
     // Produce ES Modules for Node.js instead of CommonJS
-    "target": "ES2023",
-    "module": "NodeNext",
-
+    "target": "ESNext",
+    "module": "CommonJS",
     "incremental": true,
     "noEmitOnError": false,
     "tsBuildInfoFile": ".cache/tsconfig.tsbuildinfo",
@@ -13,7 +12,6 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-
     // `strict` Enables the following rules:
     // - alwaysStrict
     // - strictNullChecks

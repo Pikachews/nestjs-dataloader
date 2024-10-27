@@ -12,12 +12,8 @@
   "homepage": "https://github.com/Pikachews/nestjs-dataloader",
   "version": "0.2.0",
   "license": "BSD-3-Clause",
-  "type": "module",
   "exports": {
     ".": "./src/index.js"
-  },
-  "engines": {
-    "node": ">=22"
   },
   "scripts": {
     "prepare": "touch node_modules && make"
